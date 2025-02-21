@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 表单元素</title>
+</head>
+<!-- name 表单元素名字 单选按钮和复选框要有相同的name值 -->
+<!-- checked属性针对单选按钮和复选框，主要作用一打开页面，就可以默认选中某个元素 -->
+<!-- maxlength 是用户可以在表单元素输入的最大字符数 -->
+
+<body>
+    <form action="xxx.php" method="get">
+        <!-- text 文本框 用户可以在里面输入任何文字 -->
+        用户名：<input type="text" name="username" value="请输入用户名" maxlength="8"> <br>
+        <!-- password 密码框 用户看不见输入的密码（可点击小眼睛查看） -->
+        密码：<input type="password" name="pwd"> <br>
+        <!-- radio 单选按钮 可以实现多选一 -->
+        性别：男 <input type="radio" name="sex"> 女 <input type="radio" name="sex" checked="checked"> <br>
+        <!-- checkbox 复选框 可以实现多选一 -->
+        爱好：吃饭<input type="checkbox" name="hobby"> 睡觉<input type="checkbox" name="hobby"> 打豆豆<input type="checkbox"
+            name="hobby" checked="checked"> <br>
+        <!-- 提交按钮 -->
+        <input type="submit" value="免费注册">
+        <!-- 重置按钮 -->
+        <input type="reset" value="重置">
+        <!-- 普通按钮 button 后期结合搭配使用 -->
+        <input type="button" value="获取短信验证码"><br>
+        <!-- 文件域 上传文件使用 -->
+        上传头像：<input type="file">
+    </form>
+
+</body>
+
+</html>
