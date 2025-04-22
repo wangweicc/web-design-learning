@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>半径为3的圆的面积和周长</title>
+</head>
+
+<body>
+    <div id="output"></div>
+    <script>
+        const radius = 3;
+        const area = Math.PI * radius * radius;
+        const cir = 2 * Math.PI * radius;
+        const outputElement = document.getElementById('output');
+        outputElement.innerHTML = `半径为 ${radius} 的圆的面积是: ${area.toFixed(2)}<br>`;
+        outputElement.innerHTML += `半径为 ${radius} 的圆的周长是: ${cir.toFixed(2)}<br>`;
+    </script>
+</body>
+
+</html>

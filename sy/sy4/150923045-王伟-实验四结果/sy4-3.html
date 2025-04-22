@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国家摄影师考评在线报名</title>
+    <style>
+        table {
+            border: 2px solid rgb(50, 74, 229);
+            border-collapse: collapse;
+        }
+
+        th {
+            padding: 5px;
+            border: 2px solid rgb(50, 74, 229);
+            border-collapse: collapse;
+            text-align: center;
+            width: 20%;
+        }
+
+        td {
+            text-indent: 1em;
+            border: 2px solid rgb(50, 74, 229);
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        .textarea {
+            height: 100px;
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>
+                    姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：
+                </th>
+                <td>
+                    <input type="text"> *
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：
+                </th>
+                <td>
+                    <label for="nan">
+                        <input type="radio" name="sex" id="nan" checked="checked">&nbsp;男&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <label for="nv">
+                        <input type="radio" name="sex" id="nv">&nbsp;女 *
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    出生日期：
+                </th>
+                <td>
+                    <input type="text" style="width: 10%;">&nbsp;年
+                    <input type="text" style="width: 10%;">&nbsp;月
+                    <input type="text" style="width: 10%;">&nbsp;日 *
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    文化程度：
+                </th>
+                <td>
+                    <select name="xueli" id="grade">
+                        <option value="小学">
+                            小学
+                        </option>
+                        <option value="初中">
+                            初中
+                        </option>
+                        <option value="高中" selected>
+                            高中
+                        </option>
+                        <option value="大学">
+                            大学
+                        </option>
+                        <option value="研究生">
+                            研究生
+                        </option>
+                        <option value="博士">
+                            博士
+                        </option>
+                    </select> *
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    所在省份：
+                </th>
+                <td>
+                    <select name="shengfen" id="land">
+                        <option value="北京" selected>
+                            北京
+                        </option>
+                        <option value="天津">
+                            天津
+                        </option>
+                        <option value="江苏">
+                            江苏
+                        </option>
+                        <option value="安徽">
+                            安徽
+                        </option>
+                        <option value="研究生">
+                            研究生
+                        </option>
+                        <option value="博士">
+                            博士
+                        </option>
+                    </select> *
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    联系地址：
+                </th>
+                <td>
+                    <input type="text" style="width: 70%;"> *
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    邮政编码：
+                </th>
+                <td>
+                    <input type="text" style="width: 70%;"> *
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    联系电话：
+                </th>
+                <td>
+                    <input type="text" style="width: 70%;"> *
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    电子信箱：
+                </th>
+                <td>
+                    <input type="text" style="width: 70%;">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：
+                </th>
+                <td>
+                    <select name="leibie" id="type">
+                        <option value="函授" selected>
+                            函授
+                        </option>
+                        <option value="夜校">
+                            夜校
+                        </option>
+                        <option value="自考">
+                            自考
+                        </option>
+                    </select> *
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    报考层次：
+                </th>
+                <td>
+                    <select name="dengji" id="level">
+                        <option value="低级">
+                            低级
+                        </option>
+                        <option value="中级">
+                            中级
+                        </option>
+                        <option value="高级" selected>
+                            高级
+                        </option>
+                    </select> *
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    报考专业：
+                </th>
+                <td>
+                    <select name="zhuanye" id="profession">
+                        <option value="国家摄影师等级考评" selected>
+                            国家摄影师等级考评
+                        </option>
+                    </select> *
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：
+                </th>
+                <td>
+                    <textarea name="beizhu" id="note" class="textarea"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>
+
+                </th>
+                <td style="text-align: center;">
+                    <input type="submit" class="submit-btn" value="提交">
+                    <input type="reset" class="submit-btn" value="重填">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

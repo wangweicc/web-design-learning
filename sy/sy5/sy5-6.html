@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .gallery {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: white;
+            overflow: hidden;
+            /* Hide overflow */
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            display: inline-block;
+            animation: scroll 20s linear infinite;
+        }
+
+        .gallery img:hover {
+            border: 2px solid green;
+        }
+
+        hr {
+            border: 6px solid green;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <h1>图像画廊</h1>
+        <hr>
+        <a href="https://n.sinaimg.cn/sinacn10104/444/w1242h1602/20191123/252d-iittafr2697970.jpg" target="_blank">
+            <img src="https://n.sinaimg.cn/sinacn10104/444/w1242h1602/20191123/252d-iittafr2697970.jpg" alt="Image 1">
+        </a>
+        <a href="https://ts1.tc.mm.bing.net/th/id/R-C.ddb1cb14f133ce666ec1573531b873a0?rik=hKdUFZmjZixHVA&riu=http%3a%2f%2fimg3.redocn.com%2f20140930%2fRedocn_2014093019422211.jpg&ehk=6XWZbJ%2fcXOJxQy%2fyxXTZccqc6wCWtqsU9DjDX7A373o%3d&risl=&pid=ImgRaw&r=0"
+            target="_blank">
+            <img src="https://ts1.tc.mm.bing.net/th/id/R-C.ddb1cb14f133ce666ec1573531b873a0?rik=hKdUFZmjZixHVA&riu=http%3a%2f%2fimg3.redocn.com%2f20140930%2fRedocn_2014093019422211.jpg&ehk=6XWZbJ%2fcXOJxQy%2fyxXTZccqc6wCWtqsU9DjDX7A373o%3d&risl=&pid=ImgRaw&r=0"
+                alt="Image 2">
+        </a>
+        <a href="https://ts1.tc.mm.bing.net/th/id/R-C.71c35d14a4d3cc3f5126760e04eebc88?rik=GyS5PsbX5Qo9XA&riu=http%3a%2f%2fzfnb-leiting.oss-cn-beijing.aliyuncs.com%2f1gfwkgeknwphrg-3.jpg&ehk=bLkB6SSy%2bw%2bOS4nsQZBW1n6%2bmlWVQ7IUXRybeoqbm08%3d&risl=&pid=ImgRaw&r=0"
+            target="_blank">
+            <img src="https://ts1.tc.mm.bing.net/th/id/R-C.71c35d14a4d3cc3f5126760e04eebc88?rik=GyS5PsbX5Qo9XA&riu=http%3a%2f%2fzfnb-leiting.oss-cn-beijing.aliyuncs.com%2f1gfwkgeknwphrg-3.jpg&ehk=bLkB6SSy%2bw%2bOS4nsQZBW1n6%2bmlWVQ7IUXRybeoqbm08%3d&risl=&pid=ImgRaw&r=0"
+                alt="Image 3">
+        </a>
+        <a href="https://tse3-mm.cn.bing.net/th/id/OIP-C.dBq-7mtROhxC8w0Ln7CtKAAAAA?rs=1&pid=ImgDetMain"
+            target="_blank">
+            <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.dBq-7mtROhxC8w0Ln7CtKAAAAA?rs=1&pid=ImgDetMain"
+                alt="Image 4">
+        </a>
+        <a href="https://n.sinaimg.cn/sinakd10112/349/w860h1089/20201109/a11b-kcpxnww8315186.jpg" target="_blank">
+            <img src="https://n.sinaimg.cn/sinakd10112/349/w860h1089/20201109/a11b-kcpxnww8315186.jpg" alt="Image 5">
+        </a>
+        <hr>
+    </div>
+
+    <!-- Background music -->
+    <audio autoplay loop>
+        <source src="宋冬野 - 安和桥.ogg" type="audio/mpeg">
+    </audio>
+</body>
+
+</html>

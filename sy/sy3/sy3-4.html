@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站管理后台页面设计</title>
+</head>
+
+<frameset noresize rows="22%,70%,*">
+    <!-- 顶部框架 -->
+    <frame src="top.html" name="topframe" scrolling="no">
+        <!-- 中间框架，嵌套左右分割 -->
+        <frameset cols="25%,*">
+            <!-- 中间左边框架 -->
+            <frame noresize src="left.html" name="leftframe" scrolling="no">
+                <!-- 中间右边框架 -->
+                <frame noresize src="news.html" name="rightframe" scrolling="no">
+        </frameset>
+        <!-- 底部框架 -->
+        <frame noresize src="bottom.html" name="bottomframe" scrolling="no">
+</frameset>
+
+</html>

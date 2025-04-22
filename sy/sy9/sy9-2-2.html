@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js脚本计算圆面积</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: #add8e6;
+            padding: 20px;
+            border: 5px solid red;
+            text-align: center;
+        }
+
+        input[type="number"] {
+            width: 200px;
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        button {
+            padding: 5px 10px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>计算圆的面积</h1>
+        <label for="radius">半径:</label>
+        <input type="number" id="radius" placeholder="请输入半径">
+        <br>
+        <label for="area">面积:</label>
+        <input type="text" id="area" readonly>
+        <br>
+        <button onclick="computeArea()">计算</button>
+        <button onclick="clearFields()">清空</button>
+    </div>
+
+    <script src="area.js"></script>
+</body>
+
+</html>

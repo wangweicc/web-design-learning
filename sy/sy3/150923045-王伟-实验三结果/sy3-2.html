@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格应用案例</title>
+    <style type="text/css">
+        table {
+            border-top: 1px solid green;
+            border-bottom: 1px solid green;
+            border-collapse: collapse;
+        }
+
+        tr {
+            width: 500px;
+            text-align: center;
+            vertical-align: middle;
+            height: 20px;
+        }
+
+        table {
+            background-color: #99ff00;
+            background-image: url(https://ts1.cn.mm.bing.net/th/id/R-C.2a49d9f3677d83a9a2d8849f1442bb22?rik=DpSAj9AUyR4RrA&riu=http%3a%2f%2ffile.51pptmoban.com%2fd%2ffile%2f2023%2f06%2f04%2fb3925630992729172938c08655e5cfd0.jpg&ehk=avAdUGiVQ52VCb2qjEv6sors6E%2bzLS0DO4tv4hnl6aw%3d&risl=&pid=ImgRaw&r=0);
+        }
+
+
+
+        td {
+            font-weight: bold;
+            text-align: center;
+            border-top: 1px solid green;
+            border-bottom: 1px solid green;
+            border-left: none;
+            border-right: none;
+        }
+
+        th {
+            border-top: 1px solid green;
+            border-bottom: 1px solid green;
+            border-left: none;
+            border-right: none;
+        }
+
+
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" align="center" width="600px" height="300px">
+        <caption>
+            <font face="黑体" size="5" color="#000000">表 1 第一学期成绩表</Font>
+        </caption>
+        <tr>
+            <th rowspan="2" width="50px" class="blue">序号</th>
+            <th rowspan="2" width="100px" class="blue">学号</th>
+            <th rowspan="2" class="blue">姓名</th>
+            <th colspan="5" class="blue">第一学期成绩</th>
+        </tr>
+        <tr>
+            <th class="blue">&nbsp;英&nbsp;&nbsp;语</th>
+            <th class="blue">&nbsp;高&nbsp;&nbsp;数</th>
+            <th class="blue">&nbsp;学科导论</th>
+            <th class="blue">&nbsp;就&nbsp;&nbsp;业</th>
+            <th class="blue">&nbsp;总&nbsp;&nbsp;分</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1019200801</td>
+            <td>李大宇</td>
+            <td>75</td>
+            <td>76</td>
+            <td>80</td>
+            <td>90</td>
+            <td>395</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1019200802</td>
+            <td>张子明</td>
+            <td>60</td>
+            <td class="red">45</td>
+            <td>66</td>
+            <td class="red">55</td>
+            <td>303</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>1019200803</td>
+            <td>胡大明</td>
+            <td class="red">55</td>
+            <td>68</td>
+            <td>64</td>
+            <td>80</td>
+            <td>343</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>1019200804</td>
+            <td>王不学</td>
+            <td class="red">34</td>
+            <td>87</td>
+            <td>76</td>
+            <td class="red">45</td>
+            <td>309</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>1019200805</td>
+            <td>徐知道</td>
+            <td>67</td>
+            <td>95</td>
+            <td>66</td>
+            <td>90</td>
+            <td>363</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="blue">课程平均分</td>
+            <td class="blue">58.2</td>
+            <td class="blue">74.2</td>
+            <td class="blue">69.6</td>
+            <td class="blue">72</td>
+            <td class="blue"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

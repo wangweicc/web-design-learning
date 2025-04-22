@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>为网页添加图像及图像链接</title>
+    <style>
+        img {
+            border: none;
+        }
+
+        .img1 {
+            width: 300px;
+            height: 400px;
+            float: left;
+        }
+
+        .img2 {
+            width: 300px;
+            height: 200px;
+            margin: 100px 50px 0 50px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 图片1 -->
+    <a href="http://www.baidu.com" target="_blank">
+        <img class="img1" src="t1.png" alt="t1">
+    </a>
+
+    <!-- 图片2 -->
+    <a>
+        <img class="img2" src="t2.png" usemap="#baidu">
+    </a>
+
+    <!-- 热区链接 -->
+    <map name="baidu">
+        <area shape="circle" coords="100,100,80" href="http://baidu.com" alt="百度">
+    </map>
+
+</body>
+
+</html>

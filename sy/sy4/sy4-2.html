@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>调查问卷</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f9fd;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url('path/to/background-image.jpg');
+            /* 替换为实际背景图像路径 */
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 1px solid #cccccc;
+        }
+
+        .header {
+            text-align: center;
+            color: #339966;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .short {
+            width: 35%;
+        }
+
+        .indent {
+            text-indent: 2em;
+        }
+
+        textarea {
+            width: 75%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        .submit-btn {
+            margin: 15px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .footer {
+            text-align: center;
+            margin: 3px;
+            font-size: 12px;
+            color: #666666;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="container">
+
+            <table border="5px">
+                <tr>
+                    <td>
+                        <h1 class="header">大学生暑期社会实践调查问卷</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>您好！<br>
+                        <div class="indent">
+                            为了更好的了解人们对近年来计算机类专业填报火热现象的看法，特制定本问卷，希望得到您的配合，请认真阅读并回答以下问题，您的回答将直接影响本调查的可信度和有效性，真诚感谢您的支持，祝您天天愉快，谢谢！
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="school">2. 您的学校：</label><br>
+                        <input type="text" id="school" name="school" class="short">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="grade">3. 您的年级：</label><br>
+                        <label for="grade">
+                            <input type="radio" id="dayi" name="grade" value="大一">
+                            大一<br>
+                            <input type="radio" id="daer" name="grade" value="大二">
+                            大二<br>
+                            <input type="radio" id="dasan" name="grade" value="大三">
+                            大三<br>
+                            <input type="radio" id="dasi" name="grade" value="大四">
+                            大四<br>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="reason">4. 报考该专业的原因：</label><br>
+                        <label for="interest">
+                            <input type="checkbox" id="interest" name="reason" value="自己感兴趣">
+                            自己感兴趣</label>
+                        <label for="future">
+                            <input type="checkbox" id="future" name="reason" value="对将来发展有利">
+                            对将来发展有利</label>
+                        <label for="society">
+                            <input type="checkbox" id="society" name="reason" value="适应社会">
+                            适应社会</label>
+                        <label for="parents">
+                            <input type="checkbox" id="parents" name="reason" value="父母主张">
+                            父母主张</label>
+                        <label for="teacher">
+                            <input type="checkbox" id="teacher" name="reason" value="老师建议">
+                            老师建议</label>
+                        <label for="allocation">
+                            <input type="checkbox" id="allocation" name="reason" value="被学校调配">
+                            被学校调配</label>
+                        <label for="other">
+                            <input type="checkbox" id="other" name="reason" value="其他">
+                            其他</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="advice">5. 您对该专业的建议：</label><br>
+                        <label for="quality">
+                            <input type="checkbox" id="quality" name="advice" value="招生时素质不重要">
+                            招生时素质不重要</label>
+                        <label for="teaching">
+                            <input type="checkbox" id="teaching" name="advice" value="师资力量要改进">
+                            师资力量要改进</label>
+                        <label for="adaptation">
+                            <input type="checkbox" id="adaptation" name="advice" value="要更适应社会需要">
+                            要更适应社会需要</label>
+                        <label for="lab">
+                            <input type="checkbox" id="lab" name="advice" value="加强专业实验室建设">
+                            加强专业实验室建设</label>
+                        <label for="other-advice">
+                            <input type="checkbox" id="other-advice" name="advice" value="其他">
+                            其他</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="practice">6. 您认为该专业学生有必要参加社会实践：</label><br>
+                        <label for="necessary">
+                            <input type="radio" id="necessary" name="practice" value="有必要">
+                            有必要</label>
+                        <label for="unnecessary">
+                            <input type="radio" id="unnecessary" name="practice" value="没有必要">
+                            没有必要</label>
+                        <label for="indifferent">
+                            <input type="radio" id="indifferent" name="practice" value="无所谓">
+                            无所谓</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="parents-support">7. 您的父母是否赞成您读该专业：</label><br>
+                        <label for="strongly-support">
+                            <input type="radio" id="strongly-support" name="parents-support" value="很赞成，希望如此">
+                            很赞成，希望如此</label>
+                        <label for="neutral">
+                            <input type="radio" id="neutral" name="parents-support" value="一般，不是很高兴">
+                            一般，不是很高兴</label>
+                        <label for="no-knowledge">
+                            <input type="radio" id="no-knowledge" name="parents-support" value="不了解">
+                            不了解</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="school-advice">8. 您对学校的建议：</label><br>
+                        <textarea id="school-advice" name="school-advice" rows="5">请您提出宝贵的建议：</textarea>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <input type="submit" class="submit-btn" value="提交答案"></input>
+                        <input type="reset" class="submit-btn" value="清空"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="footer">
+                            版权所有：计算机科学与技术系软件工程教研室 copy right©2012-1015
+                        </div>
+                    </td>
+
+                </tr>
+        </div>
+    </form>
+</body>
+
+</body>
+
+</html>

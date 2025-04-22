@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS盒模型设置</title>
+    <style>
+        .outer-box {
+            width: 450px;
+            height: 50px;
+            background-color: lightgray;
+            border: 50px solid red;
+            padding: 2px;
+            margin: 10px auto;
+        }
+
+        .inner-box {
+            background-color: lightgray;
+            padding-top: 2px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            最接近标记符内容的是填充，接下来是边框，然后是边界。
+        </div>
+    </div>
+</body>
+
+</html>
