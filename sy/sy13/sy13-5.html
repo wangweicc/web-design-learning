@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript">
+        function tt() {
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+            if (h > 0 && h < 12) {
+                alert("早上好！");
+            }
+            else if (h >= 12 && h < 14) {
+                alert("中午了，还在忙吗？");
+            }
+            else if (h >= 14 && h < 17) {
+                alert("下午好！");
+            }
+            else {
+                alert("这么晚了，还在加班，真的是太辛苦了！");
+            }
+        }
+
+        window.onload = function () {
+            tt();
+        }
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

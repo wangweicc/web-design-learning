@@ -1,0 +1,13 @@
+body {
+    background-color: #CC99FF;
+}
+
+h1 {
+    background-color: yellow;
+}
+
+p {
+    background-color: #FF99FF;
+    font-style: italic;
+    color: blue;
+}

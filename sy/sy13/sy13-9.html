@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>用户注册</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <script language="javascript">
+        function init(element) {
+            element.focus();
+        }
+
+        function CheckUserName() {
+            var username = document.Verify_form.UserName.value;
+            if (username == "") {
+                alert("对不起，用户名必须输入！");
+                return false;
+            }
+            return true;
+        }
+
+        function CheckEmail() {
+            var email = document.Verify_form.E_mail.value;
+            if (email.indexOf('@', 1) === -1) {
+                alert("电子邮件地址错误！");
+                return false;
+            }
+            return true;
+        }
+
+        function CheckPassword() {
+            var password = document.Verify_form.Password.value;
+            var confirmPassword = document.Verify_form.Againpass.value;
+
+            if (password.length < 2) {
+                alert("对不起，密码至少为2个字符！");
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert("两次输入的密码不一致，请重新输入！");
+                return false;
+            }
+            return true;
+        }
+
+        function Check() {
+            var flag = true;
+            if (!CheckUserName()) {
+                flag = false;
+            }
+            if (!CheckPassword()) {
+                flag = false;
+            }
+            if (!CheckEmail()) {
+                flag = false;
+            }
+            return flag;
+        }
+    </script>
+</head>
+
+<body onload="init(document.Verify_form.UserName)">
+    <form name="Verify_form" method="post" action="register.asp" onsubmit="return Check();">
+        <table width="75%" border="0" align="center">
+            <tr>
+                <td colspan="2">
+                    <div align="center">
+                        <font size="4" color="#FF0000">请输入用户信息</font>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td width="44%">
+                    <div align="right">输入用户名：</div>
+                </td>
+                <td width="65%"><input type="text" name="UserName"></td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <div align="right">输入密码：</div>
+                </td>
+                <td width="65%"><input type="password" name="Password"></td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <div align="right">再输入一次密码：</div>
+                </td>
+                <td width="65%"><input type="password" name="Againpass"></td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <div align="right">E-mail：</div>
+                </td>
+                <td width="65%"><input type="text" name="E_mail"></td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <div align="right"><input type="submit" name="Submit" value="提交"></div>
+                </td>
+                <td width="65%"><input type="reset" name="Reset" value="重写"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

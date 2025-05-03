@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航列表示例</title>
+    <script language="javascript">
+        function jump() {
+            var selectedValue = document.form1.navbar.options[document.form1.navbar.selectedIndex].value;
+            if (selectedValue !== "#") {
+                location.href = selectedValue;
+            }
+        }
+    </script>
+</head>
+
+<body bgcolor="ivory">
+    <div align="center">
+        <h3>请选择要跳转的网站</h3>
+        <form name="form1">
+            <select name="navbar" onchange="jump();">
+                <option value="#" selected>---导航栏---</option>
+                <option value="http://www.sohu.com">搜狐</option>
+                <option value="http://www.netease.com">网易</option>
+                <option value="http://www.sina.com.cn">新浪</option>
+                <option value="http://www.microsoft.com">微软</option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>

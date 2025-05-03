@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript">
+        function tt() {
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+            var t = h + ":" + m + ":" + s;
+            document.form1.time.value = t;
+            setTimeout(tt, 1000);
+        }
+
+        window.onload = function () {
+            tt();
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form1">
+        <input type="text" name="time" size="8" style="font-size:30px">
+    </form>
+</body>
+
+</html>

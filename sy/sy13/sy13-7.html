@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>状态栏文字特效</title>
+    <script language="JavaScript">
+        var msg = "您好，谢谢你来到本网页！";
+        var seq = 0;
+
+        function Scroll() {
+            document.getElementById("statusBar").innerHTML = msg.substring(msg.length, seq);
+            seq++;
+            if (seq >= msg.length) {
+                seq = 0;
+            }
+            window.setTimeout("Scroll();", 300);
+        }
+    </script>
+</head>
+
+<body onload="Scroll()">
+    <div id="statusBar"></div>
+</body>
+
+</html>
